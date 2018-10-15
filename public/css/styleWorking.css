@@ -1,0 +1,200 @@
+/* Body color #########################################*/
+
+    #body{
+        background: #DAECF3;
+        /* background:  url("../images/other/lou-face.png"); */
+    }
+    
+/* ################################################### */
+
+/* Nav bar  ###########################################*/
+    /* #nav{
+        background-color: #1aa6b1;
+        color: #022D41;
+        opacity: .5;
+    
+        
+    } */
+    #white-label{
+        color: whitesmoke;
+    }
+    .nav{
+        font-family:'Dancing Script', cursive;
+    }
+    a{
+        text-decoration: none;
+    }
+    .nav ul,.navmobile ul{
+        list-style: none;                 /* remove dots of li */
+        margin: 0;
+        padding: 0;
+    }
+    .nav li.navmobile li{
+        display: inline-block;            /* to allign nav items horizontally */
+    }
+    .nav a,.navmobile a{
+        color: white;
+    }
+    
+    .sticky-top {
+        transition: all 0.25s ease-in;
+    }
+    
+    /* style for when sitcky is applied */
+    .stuck .sticky-top {
+        background-color: #222 !important;
+        padding-top: 3px !important;
+        padding-bottom: 3px !important;
+    }
+/* ##################################################### */
+
+
+/* Jumbotron Banner #####################################*/
+    .jumbotron{
+        background:  url("../images/other/lou-face.png");
+        /* background-color:  rgba(254, 66, 77, .8); */
+        background-size: cover;
+         min-height: 50%;
+        min-width: 50px; 
+        font-family: 'Sigmar One', cursive; 
+
+    }
+    form{
+        padding: 0 50px 0 50px;
+        width: 75%;
+        position: "fixed";
+        margin: 200px auto;
+    }
+  
+    /* ##########################################################3 */
+
+
+    /* First container -- company summary #########################*/
+
+      p,h1, h2, h3, h4{
+        font-family: 'Sigmar One', "cursive";
+          font-size: 37px;
+          /* position: inherit; */
+          color: whitesmoke;
+
+      }
+
+      #title{
+        font-family: 'Sigmar One', "cursive";
+        font-size: 37px;
+        /* position: inherit; */
+        color: whitesmoke;
+
+      
+    }
+    
+      #hr{
+          color: #022D41; 
+      }
+
+    /* ########################################################### */
+
+    /* Body */
+    img{
+        opacity: .7;
+        width: 310px;
+        height: 310px;
+        padding: 10px 10px 10px 10px;
+    }
+    #margin{
+        margin-left: 12%;
+        margin-bottom: 14%;
+    }
+    #yo{
+        position: "fixed";
+        margin: 500px auto;
+        background-size: cover;
+    }
+    #row{
+            margin: 0 0 0 500px;
+            justify-content:center;
+    
+    }
+    /* ########################################################### */
+
+
+    /* Footer##################################################### */
+    #footer{
+        background-color:  rgba(254, 66, 77, .8);
+    }
+    .btn{
+        width: 100%;
+    }
+
+    /* ############################################################## */
+    /* Car slider css */
+
+    .carouselbox {
+        font-family: helvetica,sans-serif;
+        font-size: 14px;
+        width: 400px;
+        height: 500px;
+        position: relative;
+        /* margin: 0; */
+        /* border: 1px solid #ccc; */
+        /* box-shadow: 2px 2px 10px #ccc; */
+        overflow: hidden;
+        margin-top: 165px;
+        margin-left: 200px;
+      }
+      .carousel-content {
+        margin: 0;
+        content: center;
+        /* padding: 100px; */
+      }
+      .carousel-content li {
+        font-size: 100px;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        list-style: none;
+        text-align: center;
+        z-index: 2;
+      }
+  
+  
+      .active {
+        height: 500px;
+      }
+      .carouselbox button {
+        border: none;
+        visibility: hidden;
+      }
+      .active button {
+        visibility: visible;
+      } 
+      .offscreen {
+        position: absolute;
+        left: -2000px;
+      }
+      li{
+          color: white;
+      }
+  
+      .active .buttons {
+        padding: 5px 0;
+        /* background: #eee; */
+        text-align: center;
+        z-index: 10;
+        position: relative;
+      }
+      .active li {
+        position: absolute;
+        top: 130px;
+
+        opacity: 0;
+        transform: scale(0);
+        transition: 1s;
+      }
+      .active li.current {
+        top: 30px;
+  
+        opacity: 1;
+        transform: scale(1);
+        transition: 1s;
+      }
